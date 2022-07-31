@@ -69,11 +69,15 @@ html {
     background-color: blue;
 }
 
+#header {
+    position: relative;
+}
+
 #header #nav {
     height: 46px;
     width: 100vw;
     background-color: #000;
-    position: relative;
+    position: fixed;
 }
 
 #header #nav li {
