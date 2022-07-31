@@ -134,7 +134,7 @@ html {
 #slider {
     padding-top: 46px;
     padding-top: 50%;
-    background: url('/assets/slider/band.jpg') center /cover no-repeat;
+    background: url('/Workspace/html_css/w3_band/assets/slider/band.jpg') center /cover no-repeat;
 }
 
 #slider .description {
