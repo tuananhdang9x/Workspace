@@ -64,29 +64,31 @@ html {
 
 
 /* Main */
+body {
+    overflow-x: hidden;
+}
 
 #main {
     width: 100vw;
-    height: 1000px;
-    background-color: blue;
 }
 
 #header {
-    position: relative;
+    height: 46px;
+    width: 100%;
+    position: fixed;
+    top: 0;
 }
 
 #header #nav {
-    height: 46px;
-    width: 100vw;
+    width: 100%;
     background-color: #000;
-    position: fixed;
 }
 
 #header #nav li {
     display: inline-block;
 }
 
-#header #nav #subnav li {
+#header #nav .subnav li {
     display: block;
 }
 
@@ -109,42 +111,58 @@ html {
     font-size: 13px
 }
 
-#nav i.ti-search {
+#nav i.ti-search,
+#nav i.ti-menu {
+    display: inline-block;
+}
+
+#nav .header-search-btn {
     position: absolute;
-    right: 0px;
+    right: 0;
+    top: 0;
     line-height: 46px;
     padding: 0 24px;
     color: #fff;
 }
 
-#nav i:hover.ti-search {
+#nav .header-search-btn.ti-search:hover {
     background-color: #f44336;
 }
 
-#header #nav #subnav {
+#nav .header-search-btn.ti-menu {
+    display: none;
+}
+
+#nav .header-search-btn.ti-menu:hover {
+    background-color: #ccc;
+    color: #000;
+}
+
+#header #nav .subnav {
     display: none;
     position: absolute;
     background-color: #fff;
 }
 
-#header #nav li:hover #subnav {
+#header #nav li:hover .subnav {
     display: block;
 }
 
-#header #nav #subnav li a {
+#header #nav .subnav li a {
     display: block;
     color: #000;
-    padding: 8px 16px;
+    padding: 0px 16px;
 }
 
 #slider {
-    padding-top: 46px;
+    width: 100%;
+    margin-top: 46px;
     padding-top: 50%;
-    background: url('/Workspace/html_css/w3_band/assets/slider/band.jpg') center /cover no-repeat;
+    background: url('../slider/band.jpg') center /cover no-repeat;
 }
 
 #slider .description {
-    width: 100vw;
+    width: 100%;
     text-align: center;
     color: #fff;
     padding: 32px 16px
@@ -154,16 +172,25 @@ html {
     margin-top: 10px;
     margin-bottom: 10px;
     font-weight: 500;
+    text-shadow: 0px 0px 5px #000;
+}
+
+#slider .description b {
+    text-shadow: 0px 0px 5px #000;
 }
 
 #content {
+    width: 100%;
     background-color: #fff;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* About */
 #content #about {
-    margin-right: 107px;
-    margin-left: 107px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 900px;
     padding: 64px 16px;
 }
 
@@ -193,18 +220,18 @@ html {
 }
 
 #content .about-member {
-    width: 100%;
     padding: 32px 0px 32px;
 }
 
 /* Tour */
-#tour {
+#content #tour {
     padding: 64px 16px;
-    margin-right: 107px;
-    margin-left: 107px;
+    width: 900px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-#content .book-tour {
+#content #book-tour {
     background-color: #000;
 }
 
@@ -396,8 +423,9 @@ html {
 
 /* Contact section */
 #contact {
-    margin-right: 107px;
-    margin-left: 107px;
+    width: 900px;
+    margin-left: auto;
+    margin-right: auto;
     padding: 64px 16px;
 }
 
@@ -434,9 +462,9 @@ html {
     text-align: right;
     padding: 10px 16px;
     float: right;
+    -webkit-appearance: none;
+
 }
-
-
 
 .contact-submit:hover {
     background-color: #ccc;
