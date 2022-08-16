@@ -12,7 +12,6 @@ Moblie: <739px
 /* Moblie */
 @media (max-width:739px) {
     #header {
-        width: 100%;
         overflow: hidden;
     }
 
@@ -49,9 +48,12 @@ Moblie: <739px
         padding: 0 32px;
     }
 
+}
+
+/* Mobile & Tablet */
+@media (max-width:1023px) {
     #content #about {
-        width: 100%;
-        padding: 64px 16px;
+        width: 100% !important;
     }
 
     .s-col-full {
@@ -63,28 +65,24 @@ Moblie: <739px
     }
 
     #content #tour {
-        width: 100%;
-        padding: 64px 16px;
+        width: 100% !important;
+
     }
 
     #contact {
-        width: 100%;
-        padding: 64px 16px;
+        width: 100% !important;
+
     }
 
     .s-mt-16 {
-        margin-top: 16px;
+        margin-top: 16px !important;
     }
 
     .s-mt-8 {
-        margin-top: 8px;
+        margin-top: 8px !important;
     }
 
     .contact-submit {
         text-align: center;
     }
-
 }
-
-/* Mobile & Tablet */
-@media (max-width:1023) {}

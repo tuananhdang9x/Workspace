@@ -1,0 +1,105 @@
+:root {
+    --white-color: #fff;
+    --black-color: #000;
+    --text-color: #333;
+    --primary-color: #ee4d2d;
+    --header: 120px;
+    --header-nav: 46px;
+    --header-search: calc(var(--header) - var(--header-nav));
+}
+
+* {
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.grid {
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.grid__full-width {
+    width: 100%;
+}
+
+.grid__row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -12px;
+    margin-right: -12px;
+}
+
+.grid__col-1 {
+    width: 8.3333%;
+}
+
+.grid__col-2 {
+    width: 16.6666%;
+}
+
+.grid__col-3 {
+    width: 25%;
+}
+
+.grid__col-4 {
+    width: 33.3333%;
+}
+
+.grid__col-5 {
+    width: 41.6666%;
+}
+
+.grid__col-6 {
+    width: 50%;
+}
+
+.grid__col-10 {
+    width: 83.3333%;
+}
+
+.mr-24 {
+    margin-right: 24px;
+}
+
+.mr-8 {
+    margin-right: 8px;
+}
+
+.mr-16 {
+    margin-right: 16px;
+}
+
+@keyframes fadeIn {
+    From {
+        opacity: 0;
+    }
+
+    To {
+        opacity: 1;
+    }
+}
+
+.on-hover:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.btn {
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+.btn__item {
+    border: none;
+    padding: 8px 32px;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
